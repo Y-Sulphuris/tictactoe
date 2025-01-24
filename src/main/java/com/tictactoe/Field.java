@@ -10,15 +10,15 @@ public class Field {
 
     public Field() {
         field = new HashMap<>();
-        field.put(0, Sign.EMPTY);
-        field.put(1, Sign.EMPTY);
-        field.put(2, Sign.EMPTY);
-        field.put(3, Sign.EMPTY);
-        field.put(4, Sign.EMPTY);
-        field.put(5, Sign.EMPTY);
-        field.put(6, Sign.EMPTY);
-        field.put(7, Sign.EMPTY);
-        field.put(8, Sign.EMPTY);
+        field.put(0, Sign.VOID);
+        field.put(1, Sign.VOID);
+        field.put(2, Sign.VOID);
+        field.put(3, Sign.VOID);
+        field.put(4, Sign.VOID);
+        field.put(5, Sign.VOID);
+        field.put(6, Sign.VOID);
+        field.put(7, Sign.VOID);
+        field.put(8, Sign.VOID);
     }
 
     public Map<Integer, Sign> getField() {
@@ -27,7 +27,7 @@ public class Field {
 
     public int getEmptyFieldIndex() {
         return field.entrySet().stream()
-                .filter(e -> e.getValue() == Sign.EMPTY)
+                .filter(e -> e.getValue() == Sign.VOID)
                 .map(Map.Entry::getKey)
                 .findFirst().orElse(-1);
     }
@@ -57,6 +57,6 @@ public class Field {
                 return field.get(winPossibility.get(0));
             }
         }
-        return Sign.EMPTY;
+        return Sign.VOID;
     }
 }

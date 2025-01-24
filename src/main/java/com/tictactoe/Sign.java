@@ -1,17 +1,17 @@
 package com.tictactoe;
 
 public enum Sign {
-    EMPTY(' '),
+    VOID(' '),
     CROSS('X'),
     NOUGHT('0');
 
-    private final char sign;
+    private final char ch;
 
-    Sign(char sign) {
-        this.sign = sign;
+    Sign(char ch) {
+        this.ch = ch;
     }
 
-    public char getSign() {
-        return sign;
+    public char getCh() {
+        return ch;
     }
 }

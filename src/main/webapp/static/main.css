@@ -1,0 +1,39 @@
+
+td {
+    border: 3px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-collapse: separate;
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    font-size: 50px;
+    text-align: center;
+    empty-cells: show;
+    transition: all 0.1s ease-in-out;
+    /*
+    box-shadow: 10px 5px 5px 0 rgba(0, 0, 0, 0.5);
+    text-shadow: 10px 5px 5px 0 rgba(0, 0, 0, 0.5);
+    */
+}
+
+td:hover {
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    color: white;
+    display: flex;
+    justify-content: center;
+
+    height: 100%;
+
+    background-repeat: no-repeat;
+    background: rgb(2,0,36);
+    background: linear-gradient(20deg, rgba(2,0,36,1) 0%, rgba(2,2,236,1) 40%, rgba(0,212,255,1) 100%);
+}
